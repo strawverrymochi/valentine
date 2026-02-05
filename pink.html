@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roses For My Pinkuu Batman 🦇🌹</title>
+
+  <style>
+    body {
+<div class="floating-roses">
+  <span style="left: 5%; animation-duration: 12s;">🌹</span>
+  <span style="left: 15%; animation-duration: 10s;">🌹</span>
+  <span style="left: 25%; animation-duration: 14s;">🌹</span>
+  <span style="left: 40%; animation-duration: 11s;">🌹</span>
+  <span style="left: 55%; animation-duration: 13s;">🌹</span>
+  <span style="left: 70%; animation-duration: 9s;">🌹</span>
+  <span style="left: 85%; animation-duration: 15s;">🌹</span>
+</div>
+
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fff6ec, #ffe4e9);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #fffaf4;
+      padding: 35px;
+      border-radius: 25px;
+      max-width: 850px;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+    }
+
+    h1 {
+      color: #d1495b;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      color: #7a5c5c;
+      margin-bottom: 35px;
+      font-size: 16px;
+    }
+
+    .roses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 25px;
+    }
+
+    .rose {
+      background: #fff0f3;
+      border-radius: 20px;
+      padding: 20px;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      cursor: pointer;
+      position: relative;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.6s ease;
+      pointer-events: none;
+    }
+
+    .rose.show {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+    }
+
+    .rose:hover {
+      background: #ffe1e7;
+      transform: scale(1.05);
+    }
+
+    .reason {
+      position: absolute;
+      inset: 0;
+      background: #fffaf4;
+      border-radius: 20px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      color: #5c3d3d;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .rose.active .reason {
+      opacity: 1;
+    }
+
+    .end {
+      margin-top: 35px;
+      font-size: 18px;
+      color: #d1495b;
+      font-weight: 600;
+
+/* 🌹 Floating roses */
+.floating-roses {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-roses span {
+  position: absolute;
+  font-size: 22px;
+  animation: floatUp linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* container upar rahe */
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+    
+  </style>
+</head>
+
+<body>
+
+<!-- 🌸 Background Music -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="container">
+  <h1>Roses For My Pinkuu Batman 🦇🌹</h1>
+  <p class="subtitle">
+    Strawberry-soft moments & cream-coloured feelings   
+    just like us 🍓🤍
+<button onclick="playMusic()" style="
+  background:#ffe1e7;
+  border:none;
+  padding:10px 18px;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:14px;
+  color:#7a3b3b;
+  margin-bottom:25px;
+">
+  🎵 Tap to start the music
+</button>
+
+  </p>
+
+  <div class="roses">
+    <div class="rose">🌹<div class="reason">Because you feel like home.</div></div>
+    <div class="rose">🌹<div class="reason">Because you make my bad days softer.</div></div>
+    <div class="rose">🌹<div class="reason">Because silence with you feels safe.</div></div>
+    <div class="rose">🌹<div class="reason">Because you believe in me endlessly.</div></div>
+    <div class="rose">🌹<div class="reason">Because you make me laugh without trying.</div></div>
+    <div class="rose">🌹<div class="reason">Because loving you feels calm, not heavy.</div></div>
+    <div class="rose">🌹<div class="reason">Because you’re my Pinkuu Batman — always.</div></div>
+<div class="rose">🌹<div class="reason">Because you listen to me patiently.</div></div>
+<div class="rose">🌹<div class="reason">Because you make me feel chosen.</div></div>
+<div class="rose">🌹<div class="reason">Because your presence calms my chaos.</div></div>
+<div class="rose">🌹<div class="reason">Because you care in the smallest ways.</div></div>
+<div class="rose">🌹<div class="reason">Because life feels sweeter with you.</div></div>
+
+
+  </div>
+
+  <div class="end">
+    Happy Rose Day, my forever flower 🌹🍓
+  </div>
+</div>
+
+<script>
+function playMusic() {
+  document.getElementById("bgMusic").play();
+}
+
+  const roses = document.querySelectorAll('.rose');
+
+  roses.forEach((rose, index) => {
+    setTimeout(() => {
+      rose.classList.add('show');
+    }, index * 650);
+
+    rose.addEventListener('click', () => {
+      rose.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
